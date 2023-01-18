@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    display: block;
+  }
+}

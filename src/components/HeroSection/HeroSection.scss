@@ -1,0 +1,34 @@
+@use "../../scss/variables";
+
+.hero-section {
+  flex-direction: column;
+
+  padding: 0 20px;
+
+  overflow-x: hidden;
+
+  .hero-texts {
+    text-align: center;
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: bolder;
+      color: variables.$Very-Dark-Blue;
+    }
+
+    p {
+      color: variables.$Grayish-Violet;
+      margin: 20px 0;
+    }
+  }
+
+  .hero-img {
+    width: max-content;
+
+    img {
+      display: block;
+      width: 135vw;
+      margin-bottom: 20px;
+    }
+  }
+}
