@@ -1,0 +1,27 @@
+@use "../../scss/variables.scss";
+
+.statistics {
+  background-color: #f0f1f6;
+  padding: 0 20px 80px;
+
+  .statistics-texts {
+    padding: 150px 0 90px;
+    text-align: center;
+
+    h2 {
+      color: variables.$Very-Dark-Blue;
+      margin-bottom: 17px;
+    }
+
+    p {
+      color: variables.$Grayish-Violet;
+    }
+  }
+
+  .statistics-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+  }
+}

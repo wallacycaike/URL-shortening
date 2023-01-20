@@ -1,0 +1,13 @@
+@use "../../scss/variables";
+
+.action-button {
+  background-color: variables.$Cyan;
+  border-radius: 30px;
+
+  padding: 17px 50px;
+
+  font-family: "Poppins", sans-serif;
+
+  color: #fff;
+  text-decoration: none;
+}

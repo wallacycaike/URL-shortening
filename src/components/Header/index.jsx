@@ -1,6 +1,6 @@
-import { Navbar } from "./Navbar/Navbar";
+import { Navbar } from "./Navbar";
 import logo from "../../images/logo.svg";
-import "./Header.scss";
+import "./styles.scss";
 
 export function Header() {
   return (

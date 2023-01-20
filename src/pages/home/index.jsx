@@ -1,6 +1,10 @@
 import { Fragment } from "react";
-import { Header } from "../../components/Header/Header";
-import { HeroSection } from "../../components/HeroSection/HeroSection";
+import { Header } from "../../components/Header";
+import { HeroSection } from "../../components/HeroSection";
+import { ShortenLink } from "../../components/ShortenLink";
+import { Statistics } from "../../components/Statistics";
+
+import "./styles.scss";
 
 export function Home() {
   return (
@@ -8,6 +12,8 @@ export function Home() {
       <Header />
       <main>
         <HeroSection />
+        <ShortenLink />
+        <Statistics />
       </main>
     </Fragment>
   );
