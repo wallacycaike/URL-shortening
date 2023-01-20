@@ -1,6 +1,6 @@
 import heroImg from "../../images/illustration-working.svg";
-import { Button } from "../Button/Button";
-import "./HeroSection.scss";
+import { Button } from "../Button";
+import "./styles.scss";
 
 export function HeroSection() {
   return (

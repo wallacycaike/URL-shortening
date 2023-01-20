@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import "./Navbar.scss";
+import "./styles.scss";
 
 const navItens = ["Features", "Pricing", "Resources", "Login", "Sign up"];
 
