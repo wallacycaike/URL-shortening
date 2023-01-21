@@ -2,7 +2,10 @@
 
 .footer {
   background-color: variables.$Very-Dark-Violet;
+  width: 100%;
+}
 
+.footer-itens {
   width: 100%;
 
   padding: 50px 0;
@@ -12,8 +15,23 @@
   align-items: center;
   gap: 40px;
 
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
   .footer-logo {
     filter: invert(100%) brightness(2);
+  }
+
+  .footer-links {
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 25px;
+    }
   }
 
   .footer-links > * {
@@ -24,6 +42,11 @@
     gap: 10px;
 
     margin-bottom: 45px;
+
+    @media (min-width: 1024px) {
+      min-width: 130px;
+      align-items: flex-start;
+    }
 
     &:last-child {
       margin: 0;
@@ -40,35 +63,47 @@
       font-size: 16px;
 
       &:hover {
-        opacity: 0.7;
+        color: variables.$Cyan;
       }
     }
   }
 
   .footer-socials {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 25px;
 
-    a {
-      font-size: 28px;
-      color: #fff;
+    @media (min-width: 1024px) {
+      gap: 15px;
+    }
 
-      &:hover {
-        opacity: 0.7;
+    .footer-socials-links {
+      display: flex;
+      gap: 25px;
+
+      a {
+        font-size: 28px;
+        color: #fff;
+
+        &:hover {
+          color: variables.$Cyan;
+        }
       }
     }
-  }
 
-  .attribution {
-    color: #fff;
-    font-size: 12px;
+    .attribution {
+      color: #fff;
+      font-size: 13px;
+      text-align: center;
 
-    a {
-      text-decoration: none;
-      color: variables.$Cyan;
+      a {
+        text-decoration: none;
+        color: variables.$Cyan;
 
-      &:hover {
-        opacity: 0.7;
+        &:hover {
+          opacity: 0.7;
+        }
       }
     }
   }

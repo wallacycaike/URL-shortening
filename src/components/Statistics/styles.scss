@@ -2,34 +2,69 @@
 
 .statistics-section {
   background-color: #f0f1f6;
-  padding: 0 20px 80px;
+  min-height: 85vh;
 
-  .statistics-texts {
-    padding: 150px 0 90px;
-    text-align: center;
-
-    h2 {
-      color: variables.$Very-Dark-Blue;
-      margin-bottom: 17px;
-    }
-
-    p {
-      color: variables.$Grayish-Violet;
-    }
-  }
-
-  .statistics-cards {
+  .statistics-itens {
+    padding: 0 20px 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 90px;
 
-    &::before {
-      content: "";
-      height: 55rem;
-      width: 0.5rem;
-      background-color: variables.$Cyan;
-      position: absolute;
+    .statistics-texts {
+      padding: 150px 0 90px;
+      text-align: center;
+      max-width: 510px;
+
+      h2 {
+        color: variables.$Very-Dark-Blue;
+        margin-bottom: 17px;
+
+        @media (min-width: 768px) {
+          font-size: 2rem;
+        }
+
+        @media (min-width: 1024px) {
+          font-size: 2.5rem;
+        }
+      }
+
+      p {
+        color: variables.$Grayish-Violet;
+      }
+    }
+
+    .statistics-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 90px;
+
+      &::before {
+        content: "";
+        height: 55rem;
+        width: 0.5rem;
+        background-color: variables.$Cyan;
+        position: absolute;
+      }
+
+      @media (min-width: 1200px) {
+        flex-direction: row;
+        gap: 30px;
+
+        &::before {
+          height: 0.5rem;
+          width: 55rem;
+          transform: translateY(22px);
+        }
+
+        .card:nth-child(2) {
+          transform: translateY(50px);
+        }
+
+        .card:nth-child(3) {
+          transform: translateY(100px);
+        }
+      }
     }
   }
 }

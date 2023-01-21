@@ -4,7 +4,7 @@ import "./styles.scss";
 
 export function Header() {
   return (
-    <header className="header">
+    <header className="header container">
       <Navbar />
       <a href="#" className="logo">
         <img src={logo} alt="Shortly-logo" className="navbar-logo" />

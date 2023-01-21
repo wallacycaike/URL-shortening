@@ -1,10 +1,12 @@
 @use "../../../scss/variables.scss";
 
 .card {
+  max-width: 350px;
+
   background-color: #fff;
   border-radius: 5px;
 
-  padding: 50px 20px 40px;
+  padding: 50px 24px 40px;
 
   display: flex;
   flex-direction: column;
@@ -37,6 +39,6 @@
 
   p {
     color: variables.$Grayish-Violet;
-    font-size: 17px;
+    font-size: 16px;
   }
 }

@@ -31,6 +31,10 @@
 
         a {
           color: variables.$Grayish-Violet;
+
+          &:hover {
+            color: variables.$Very-Dark-Violet;
+          }
         }
       }
 
@@ -41,6 +45,10 @@
 
         .authenticator-login {
           color: variables.$Grayish-Violet;
+
+          &:hover {
+            color: variables.$Very-Dark-Violet;
+          }
         }
 
         .authenticator-signUp {
@@ -72,79 +80,83 @@
 }
 
 .open {
-  .navbar-list {
-    background-color: variables.$Dark-Violet;
-    border-radius: 10px;
+  @media (max-width: 1023px) {
+    .navbar-list {
+      background-color: variables.$Dark-Violet;
+      border-radius: 10px;
 
-    opacity: 1;
-    visibility: visible;
-    position: fixed;
-    top: 18rem;
-    left: 50%;
-    z-index: 999;
-    transform: translate(-50%, -50%);
-
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-
-    padding: 40px 25px;
-
-    .navbar-itens {
-      list-style: none;
+      opacity: 1;
+      visibility: visible;
+      position: fixed;
+      top: 18rem;
+      left: 50%;
+      z-index: 999;
+      transform: translate(-50%, -50%);
 
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 30px;
+      width: 90%;
 
-      padding-bottom: 30px;
+      padding: 40px 25px;
 
-      border-bottom: 1px solid #ffffff33;
+      .navbar-itens {
+        list-style: none;
 
-      a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: 700;
-        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
 
-        &:hover {
-          opacity: 0.7;
-        }
-      }
-    }
+        padding-bottom: 30px;
 
-    .navbar-authenticators {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
+        border-bottom: 1px solid #ffffff33;
 
-      padding-top: 30px;
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: 700;
+          font-size: 20px;
 
-      .authenticator-login {
-        text-decoration: none;
-        color: #fff;
-        font-weight: 700;
-        font-size: 20px;
-
-        &:hover {
-          opacity: 0.7;
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
 
-      .authenticator-signUp {
-        background-color: variables.$Cyan;
-        border-radius: 50px;
-        padding: 10px 100px;
+      .navbar-authenticators {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
 
-        text-decoration: none;
-        color: #fff;
-        font-weight: 700;
-        font-size: 20px;
+        padding-top: 30px;
 
-        &:hover {
-          opacity: 0.7;
+        .authenticator-login {
+          text-decoration: none;
+          color: #fff;
+          font-weight: 700;
+          font-size: 20px;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+
+        .authenticator-signUp {
+          background-color: variables.$Cyan;
+          border-radius: 50px;
+          padding: 15px 0;
+          width: 95%;
+
+          text-align: center;
+          text-decoration: none;
+          color: #fff;
+          font-weight: 700;
+          font-size: 20px;
+
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
     }

@@ -4,8 +4,11 @@
   background-color: variables.$Dark-Violet;
   background-image: url("../../images/bg-boost-mobile.svg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-  height: 300px;
+  height: 250px;
+  padding: 0 10px;
 
   display: flex;
   flex-direction: column;
@@ -13,7 +16,25 @@
   justify-content: center;
   gap: 20px;
 
+  text-align: center;
+
+  @media (min-width: 768px) {
+    background-image: url("../../images/bg-boost-desktop.svg");
+    // background-size: auto;
+    // background-position: left;
+  }
+
   .boost-title {
     color: #fff;
+
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 2.5rem;
+    }
   }
 }
