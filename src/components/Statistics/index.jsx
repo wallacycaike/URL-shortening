@@ -7,7 +7,7 @@ import "./styles.scss";
 
 export function Statistics() {
   return (
-    <section className="statistics">
+    <section className="statistics-section">
       <div className="statistics-texts">
         <h2 className="statistics-title">Advanced Statistics</h2>
         <p className="statistics-paragraph">

@@ -1,4 +1,6 @@
 import { Fragment } from "react";
+import { Footer } from "../../components/Footer";
+import { Boost } from "../../components/GetStarted";
 import { Header } from "../../components/Header";
 import { HeroSection } from "../../components/HeroSection";
 import { ShortenLink } from "../../components/ShortenLink";
@@ -10,16 +12,13 @@ export function Home() {
   return (
     <Fragment>
       <Header />
-      <main>
+      <main className="main">
         <HeroSection />
         <ShortenLink />
         <Statistics />
+        <Boost />
       </main>
+      <Footer />
     </Fragment>
   );
 }
-
-// <i class="fa-brands fa-square-facebook"></i>
-// <i class="fa-brands fa-twitter"></i>
-// <i class="fa-brands fa-pinterest"></i>
-// <i class="fa-brands fa-instagram"></i>

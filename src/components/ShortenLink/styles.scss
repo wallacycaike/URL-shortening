@@ -1,6 +1,6 @@
 @use "../../scss/variables.scss";
 
-.shortenlink {
+.shortenlink-section {
   transform: translateY(80px);
 
   padding: 0 20px;
@@ -41,6 +41,10 @@
       border-radius: 10px;
 
       color: #fff;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }
