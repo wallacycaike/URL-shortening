@@ -16,6 +16,13 @@
 
   position: relative;
 
+  @media (min-width: 1200px) {
+    padding: 50px 28px 40px;
+
+    align-items: flex-start;
+    text-align: start;
+  }
+
   .card-img {
     background-color: variables.$Dark-Violet;
     border-radius: 50%;

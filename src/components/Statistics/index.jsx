@@ -25,7 +25,7 @@ export function Statistics() {
           <Card
             icon={iconRecords}
             title="Detailed Records"
-            description="Gain insights ito who is clicking your links. Knowing when and where people engage with your content gelps inform better decisions."
+            description="Gain insights ito who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."
           />
           <Card
             icon={iconCustomizable}
