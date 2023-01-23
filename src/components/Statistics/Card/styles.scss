@@ -1,7 +1,7 @@
 @use "../../../scss/variables.scss";
 
 .card {
-  max-width: 350px;
+  max-width: 380px;
 
   background-color: #fff;
   border-radius: 5px;
@@ -17,7 +17,7 @@
   position: relative;
 
   @media (min-width: 1200px) {
-    padding: 50px 28px 40px;
+    padding: 50px 35px 40px;
 
     align-items: flex-start;
     text-align: start;

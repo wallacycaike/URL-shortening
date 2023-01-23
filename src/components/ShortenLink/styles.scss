@@ -1,80 +1,88 @@
 @use "../../scss/variables.scss";
 
 .shortenlink-section {
-  transform: translateY(85px);
+  background-color: #f0f1f6;
 
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: auto;
+  .shortenlink-itens {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: auto;
 
-  @media (min-width: 1220px) {
-    padding: 0;
-  }
+    transform: translateY(-85px);
 
-  @media (min-width: 768px) {
-    transform: translateY(-70px);
-    position: absolute;
-    right: 0;
-    left: 0;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-
-    padding: 20px;
-
-    background-color: variables.$Dark-Violet;
-    background-image: url("../../images/bg-shorten-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: top right;
-    border-radius: 10px;
+    @media (min-width: 1220px) {
+      padding: 0;
+    }
 
     @media (min-width: 768px) {
-      flex-direction: row;
-      padding: 40px;
-
-      background-image: url("../../images/bg-shorten-desktop.svg");
-      background-position: center;
-      background-size: cover;
+      transform: translateY(-85px);
     }
 
-    input {
-      border: none;
-      outline: none;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
 
-      padding: 15px 20px;
+      padding: 20px;
+      margin-bottom: 45px;
+
+      background-color: variables.$Dark-Violet;
+      background-image: url("../../images/bg-shorten-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: top right;
       border-radius: 10px;
 
-      &::placeholder {
-        color: variables.$Grayish-Violet;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        padding: 40px;
+
+        background-image: url("../../images/bg-shorten-desktop.svg");
+        background-position: center;
+        background-size: cover;
       }
 
-      @media (min-width: 768px) {
-        width: 80%;
+      input {
+        border: none;
+        outline: none;
+
+        padding: 15px 20px;
+        border-radius: 10px;
+
+        &::placeholder {
+          color: variables.$Grayish-Violet;
+        }
+
+        @media (min-width: 768px) {
+          width: 80%;
+        }
+      }
+
+      button {
+        cursor: pointer;
+
+        border: none;
+
+        padding: 15px;
+
+        background-color: variables.$Cyan;
+        border-radius: 10px;
+
+        color: #fff;
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        @media (min-width: 768px) {
+          width: 20%;
+        }
       }
     }
+  }
 
-    button {
-      cursor: pointer;
-
-      border: none;
-
-      padding: 15px;
-
-      background-color: variables.$Cyan;
-      border-radius: 10px;
-
-      color: #fff;
-
-      &:hover {
-        opacity: 0.7;
-      }
-
-      @media (min-width: 768px) {
-        width: 20%;
-      }
-    }
+  .shortenlinks-links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 }

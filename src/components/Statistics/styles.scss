@@ -2,7 +2,7 @@
 
 .statistics-section {
   background-color: #f0f1f6;
-  min-height: 85vh;
+  // min-height: 85vh;
 
   .statistics-itens {
     padding: 0 20px 80px;
@@ -10,10 +10,22 @@
     flex-direction: column;
     align-items: center;
 
+    @media (min-width: 768px) {
+      padding: 0 0 80px;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 0 0 120px;
+    }
+
     .statistics-texts {
-      padding: 150px 0 90px;
+      padding-bottom: 100px;
       text-align: center;
       max-width: 510px;
+
+      @media (min-width: 1200px) {
+        padding-bottom: 20px;
+      }
 
       h2 {
         color: variables.$Very-Dark-Blue;
@@ -37,7 +49,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       gap: 90px;
+
+      width: 100%;
 
       &::before {
         content: "";
@@ -49,6 +64,7 @@
 
       @media (min-width: 1200px) {
         flex-direction: row;
+        justify-content: space-between;
         gap: 30px;
 
         &::before {
@@ -58,11 +74,13 @@
         }
 
         .card:nth-child(2) {
-          transform: translateY(50px);
+          // transform: translateY(50px);
+          margin-top: 100px;
         }
 
         .card:nth-child(3) {
-          transform: translateY(100px);
+          // transform: translateY(100px);
+          margin-top: 200px;
         }
       }
     }
