@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [URL shortening API landing page (Vite, React, SASS/SCSS,)](https://www.frontendmentor.io/solutions/url-shortening-api-landing-page-hxajVRC0pz)
+- Live Site URL: [https://wat-shortener.vercel.app/](https://wat-shortener.vercel.app/)
 
 ## My process
 
