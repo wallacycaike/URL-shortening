@@ -22,8 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Temporary archives 
-README-template.md
-README.md
-style-guide.md

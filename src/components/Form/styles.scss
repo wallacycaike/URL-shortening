@@ -1,3 +1,108 @@
-.error {
-  border: 1px solid red;
+@use "../../scss/variables.scss";
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  position: relative;
+
+  padding: 20px;
+  margin-bottom: 45px;
+
+  background-color: variables.$Dark-Violet;
+  background-image: url("../../images/bg-shorten-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-radius: 10px;
+
+  @media (min-width: 768px) {
+    padding: 0 50px;
+    height: 150px;
+
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+
+    background-image: url("../../images/bg-shorten-desktop.svg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 70px;
+  }
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (min-width: 768px) {
+      width: 80%;
+    }
+
+    span {
+      bottom: 1rem;
+      margin-top: 5px;
+      color: variables.$Red;
+      font-style: italic;
+      font-size: 14px;
+
+      @media (min-width: 768px) {
+        font-size: 16px;
+        position: absolute;
+      }
+    }
+
+    input {
+      width: 100%;
+      padding: 15px 20px;
+      border-radius: 10px;
+
+      border: none;
+      outline: none;
+
+      @media (min-width: 768px) {
+        width: auto;
+      }
+
+      &::placeholder {
+        color: variables.$Grayish-Violet;
+      }
+
+      @media (min-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    input.error {
+      border: 2px solid variables.$Red;
+
+      &::placeholder {
+        color: variables.$Red;
+      }
+    }
+  }
+
+  button {
+    cursor: pointer;
+
+    border: none;
+
+    padding: 15px;
+
+    background-color: variables.$Cyan;
+    border-radius: 10px;
+
+    color: #fff;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @media (min-width: 768px) {
+      width: 20%;
+    }
+  }
 }

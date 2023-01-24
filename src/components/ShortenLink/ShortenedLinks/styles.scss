@@ -1,6 +1,7 @@
 @use "../../../scss/variables.scss";
 
 .shortenedLinks {
+  overflow-wrap: break-word;
   background-color: #fff;
   border-radius: 5px;
   font-size: 17px;

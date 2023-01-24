@@ -15,68 +15,11 @@
     }
 
     @media (min-width: 768px) {
-      transform: translateY(-85px);
+      transform: translateY(-55px);
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-
-      padding: 20px;
-      margin-bottom: 45px;
-
-      background-color: variables.$Dark-Violet;
-      background-image: url("../../images/bg-shorten-mobile.svg");
-      background-repeat: no-repeat;
-      background-position: top right;
-      border-radius: 10px;
-
-      @media (min-width: 768px) {
-        flex-direction: row;
-        padding: 40px;
-
-        background-image: url("../../images/bg-shorten-desktop.svg");
-        background-position: center;
-        background-size: cover;
-      }
-
-      input {
-        border: none;
-        outline: none;
-
-        padding: 15px 20px;
-        border-radius: 10px;
-
-        &::placeholder {
-          color: variables.$Grayish-Violet;
-        }
-
-        @media (min-width: 768px) {
-          width: 80%;
-        }
-      }
-
-      button {
-        cursor: pointer;
-
-        border: none;
-
-        padding: 15px;
-
-        background-color: variables.$Cyan;
-        border-radius: 10px;
-
-        color: #fff;
-
-        &:hover {
-          opacity: 0.7;
-        }
-
-        @media (min-width: 768px) {
-          width: 20%;
-        }
-      }
+    @media (min-width: 1200px) {
+      transform: translateY(-75px);
     }
   }
 

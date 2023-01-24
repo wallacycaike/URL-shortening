@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./styles.scss";
 
-export function ShortenedLinks() {
+export function ShortenedLinks({ full_short_link, original_link }) {
   const [linkCopied, setLinkCopied] = useState(false);
 
   const copyLink = () => {
     setLinkCopied(!linkCopied);
+
+    navigator.clipboard.writeText(full_short_link);
 
     setTimeout(() => {
       setLinkCopied(false);
@@ -15,10 +17,10 @@ export function ShortenedLinks() {
   return (
     <div className="shortenedLinks">
       <div className="shortenedLinks-link">
-        <span>https://www.frontendmentor.io</span>
+        <span>{original_link}</span>
       </div>
       <div className="shortenedLinks-linkShortened">
-        <span>https://rel.ink/k4IKyk</span>
+        <span>{full_short_link}</span>
         <button
           className={`shortenedLinks-copyBtn ${linkCopied ? "copied" : ""}`}
           onClick={copyLink}
